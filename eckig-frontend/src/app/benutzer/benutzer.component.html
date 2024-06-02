@@ -1,0 +1,24 @@
+<!--Populate data in the web page-->
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </thead>
+                <tbody>
+                    <!--Use Angular interpolation to populate Benutzer data that will loop through arraw of object-->
+                    <tr *ngFor="let benutzer of benutzer">
+                        <td>{{benutzer.id}}</td>
+                        <td>{{benutzer.firstName}}</td>
+                        <td>{{benutzer.lastName}}</td>
+                        <td>{{benutzer.email}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
